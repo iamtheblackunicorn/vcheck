@@ -1,6 +1,6 @@
 {
   "name": "vcheck",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -17,7 +17,7 @@
     "node-sass": "^7.0.1",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.0",
-    "vulcheck": "^1.0.0"
+    "vulcheck": "^1.4.0"
   },
   "eslintConfig": {
     "root": true,
