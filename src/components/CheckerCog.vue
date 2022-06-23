@@ -107,6 +107,7 @@ $headingFontSize: 40px;
 $contenFontSize: 30px;
 $stdPadding: 10px;
 $stdBorderRadius: 25px;
+$gradientColorThree: #FFC414;
 
 /* DESKTOP SECTION START */
 html, body {
@@ -118,7 +119,11 @@ html, body {
   height: 100vh;
   margin: 0px;
   padding: 0px;
-  background-color: $mainColor;
+  background: linear-gradient(
+   135deg,
+   $mainColor,
+   $gradientColorThree
+  );
 }
 div.content {
   display: block;
