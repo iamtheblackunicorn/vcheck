@@ -6,7 +6,7 @@
 
 ## ABOUT :books:
 
-A year ago, I wrote an algorithm to check the security of passwords, any passwords. I implemented in Dart, the implementation of which can be found [here](https://iamtheblackunicorn/securitycheck). I recently decided to rewrite the implementation in ECMA Script, a.k.a. Javascript. I did that but then decided to make a shiny little web application out of the Javascript implementation. This is that shiny web application. The ES implementation can be found [here](https://github.com/iamtheblackunicorn/vulcheck). :heart:
+A year ago, I wrote an algorithm to check the security of passwords, any passwords. I implemented it in Dart, the implementation of which can be found [here](https://iamtheblackunicorn/securitycheck). I recently decided to rewrite the implementation in ECMA Script, a.k.a. Javascript. I did that, but then decided to make a shiny little web application out of the Javascript implementation. This is that shiny web application. The ES implementation can be found [here](https://github.com/iamtheblackunicorn/vulcheck). My one true love, having been Python, has shifted to Rust and the implementation of the same algorithm can be found [here](https://iamtheblackunicorn/flek). :heart:
 
 ## DEPLOYED PROJECT ON NETLIFY :rocket:
 
