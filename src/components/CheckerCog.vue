@@ -76,10 +76,10 @@ export default {
         console.log(vulcheck.isSecure(this.start));
         if (vulcheck.isSecure(this.start) == true ) {
             this.boolResult = 'Yes';
+            this.pwdSuggestion = '!NEEDED';
         }
         else {
             this.boolResult = 'No';
-            this.isVul = true;
             this.pwdSuggestion = vulcheck.generatePassword(10);
         }
     }
