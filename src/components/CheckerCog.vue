@@ -186,7 +186,12 @@ button {
   transition-duration: 0.6s;
 }
 button:hover {
-  color: $mainColor;
+  background: linear-gradient(
+   45deg,
+   $mainColor,
+   $gradientColorThree
+  );
+  color: $fontColor;
 }
 ul {
   margin: 0 auto;
