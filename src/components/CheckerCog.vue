@@ -1,45 +1,75 @@
+<!--
+VCHECK by Alexander Abraham,
+a.k.a. "The Black Unicorn", a.k.a. "Angeldust Duke".
+Licensed under the MIT license.
+-->
+
 <template>
+
+ <!--Main Div displaying the main component.-->
  <div class="content">
+
+  <!--Displays the heading.-->
   <h1>{{ name }}</h1>
+
+  <!--Captures the data and processes it.-->
   <input v-model="start" placeholder="Password"/>
   <button @click="check()">Check</button>
+
+  <!--Displays the computed results.-->
   <ul>
    <p>Security score: {{ numberResult }}</p>
    <p>Password secure: {{ boolResult }}</p>
+   <p>Suggested password: {{ pwdSuggestion }}</p>
   </ul>
+
  </div>
+
+ <!--A small footer for trademarking.-->
  <div class="footer">
   <p class="footer">
    {{ msg }}
   </p>
+
  </div>
+
 </template>
 
 <script>
 
+// Imports the vulcheck library for
+// importing functions using my
+// algorithm.
 import vulcheck from 'vulcheck';
 
 export default {
 
+  // Naming the component.
   name: 'CheckerCog',
+
+  // Exporting the needed
+  // data.
   props: [
     'name',
     'msg'
   ],
 
   data() {
+
     // Setting up the app-wide
     // variables.
     return {
        start: '',
        numberResult: '',
        boolResult: '',
-       isVul: false
+       pwdSuggestion: ''
     };
   },
 
   methods: {
 
+    // Checking the input and suggesting a password if the password is deemed
+    // to be to weak.
     check(){
         this.numberResult = vulcheck.passwordStrength(this.start).toString();
         this.boolResult = '';
@@ -50,6 +80,7 @@ export default {
         else {
             this.boolResult = 'No';
             this.isVul = true;
+            this.pwdSuggestion = vulcheck.generatePassword(10);
         }
     }
 
@@ -58,10 +89,14 @@ export default {
 </script>
 
 <style lang="scss">
+
+// Loading the remote font.
 @font-face {
   font-family: 'DotMatrix';
   src: url('https://blckunicorn.art/assets/fonts/DotMatrix.ttf') format('truetype');
 }
+
+// Setting the app-wide variables.
 $headingFont: 'DotMatrix';
 $mainColor: #C566F5;
 $gradientColorOne: #6700FE;
@@ -72,6 +107,8 @@ $headingFontSize: 40px;
 $contenFontSize: 30px;
 $stdPadding: 10px;
 $stdBorderRadius: 25px;
+
+/* DESKTOP SECTION START */
 html, body {
   top: 0;
   right: 0;
@@ -83,7 +120,6 @@ html, body {
   padding: 0px;
   background-color: $mainColor;
 }
-
 div.content {
   display: block;
   margin: 0 auto;
@@ -128,7 +164,6 @@ input {
 input:focus {
   outline: none;
 }
-
 button {
   margin: 0 auto;
   display: block;
@@ -145,11 +180,9 @@ button {
   color: $extraColor;
   transition-duration: 0.6s;
 }
-
 button:hover {
   color: $mainColor;
 }
-
 ul {
   margin: 0 auto;
   display: block;
@@ -158,7 +191,6 @@ ul {
   width: 83%;
   padding: 0px;
 }
-
 p {
   font-family: $headingFont;
   color: $fontColor;
@@ -169,7 +201,6 @@ p {
   padding-left: 0px;
   margin: 0px;
 }
-
 div.footer {
   width: 100vw;
   border-top: 3px solid $fontColor;
@@ -184,7 +215,6 @@ div.footer {
   position: fixed;
   background-color: transparent;
 }
-
 p.footer {
   font-family: $headingFont;
   color: $fontColor;
@@ -194,9 +224,9 @@ p.footer {
   text-align: center;
   font-style: italic;
 }
+/* DESKTOP SECTION END */
 
-
-
+/* MOBILE SECTION START */
 @media screen and (max-width: 800px){
   $headingFontSize: 30px;
   $contenFontSize: 25px;
@@ -222,4 +252,5 @@ p.footer {
     font-size: $contenFontSize;
   }
 }
+/* MOBILE SECTION END */
 </style>
