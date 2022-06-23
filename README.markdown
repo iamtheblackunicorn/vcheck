@@ -6,11 +6,11 @@
 
 ## ABOUT :books:
 
-
+A year ago, I wrote an algorithm to check the security of passwords, any passwords. I implemented in Dart, the implementation of which can be found [here](https://iamtheblackunicorn/securitycheck). I recently decided to rewrite the implementation in ECMA Script, a.k.a. Javascript. I did that but then decided to make a shiny little web application out of the Javascript implementation. This is that shiny web application. The ES implementation can be found [here](https://github.com/iamthebalckunicorn/vulcheck). :heart:
 
 ## DEPLOYED PROJECT ON NETLIFY :rocket:
 
-To view a live deployed version of this project, click here: [VIEW](.netlify.app)
+To view a live deployed version of this project, click here: [VIEW](https://gleeful-taiyaki-bcd4e5.netlify.app)
 
 ## SET IT UP :inbox_tray:
 
@@ -59,7 +59,6 @@ The app will tell you how high you ranked according to ***VCHECK***'s algorithm 
 ## LINKS :heart_on_fire:
 
 - To find out more about the algorithm being used, click [here](https://github.com/iamtheblackunicorn/vulcheck).
-- If you want a nice story, click [here](https://angeldustduke.art).
 
 ## CHANGELOG :black_nib:
 
@@ -72,5 +71,5 @@ The app will tell you how high you ranked according to ***VCHECK***'s algorithm 
 
 ## NOTE :scroll:
 
-- *VCheck :ribbons: :rocket:* by Alexander Abraham :black_heart: a.k.a. *"The Black Unicorn" :unicorn:*
+- *VCheck :ribbon: :rocket:* by Alexander Abraham :black_heart: a.k.a. *"The Black Unicorn" :unicorn:*
 - Licensed under the MIT license.
