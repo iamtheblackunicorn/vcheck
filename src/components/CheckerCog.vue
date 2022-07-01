@@ -28,7 +28,7 @@ Licensed under the MIT license.
  <!--A small footer for trademarking.-->
  <div class="footer">
   <p class="footer">
-   {{ msg }}
+   VCheck on <a href="https://github.com/iamtheblackunicorn/vcheck">GitHub</a>
   </p>
 
  </div>
@@ -51,7 +51,7 @@ export default {
   // data.
   props: [
     'name',
-    'msg'
+    'appName'
   ],
 
   data() {
@@ -210,6 +210,18 @@ p {
   padding-right: 0px;
   padding-left: 0px;
   margin: 0px;
+}
+a {
+  font-family: $headingFont;
+  color: $fontColor;
+  font-size: $contenFontSize;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: underline;
+  transition-duration: 0.6s;
+}
+a:hover {
+  color: $mainColor;
 }
 div.footer {
   width: 100vw;

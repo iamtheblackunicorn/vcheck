@@ -7,7 +7,7 @@ Licensed under the MIT license.
 <template>
 
  <!--Importing the main component and mounting it to the body.-->
- <CheckerCog name="VCHECK" msg="VCHECK by Alexander Abraham."/>
+ <CheckerCog name="VCHECK"/>
 
 </template>
 
