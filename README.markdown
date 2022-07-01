@@ -67,7 +67,7 @@ The app will tell you how high you ranked according to ***VCHECK***'s algorithm 
 - Initial release.
 - Upload to GitHub.
 - Styling finalized.
-- Deployment on Netlify.
+- Deployment on GitHub Pages.
 
 ## NOTE :scroll:
 
